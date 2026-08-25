@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://pinhead.ink/v25/pinhead.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A (Catholic) Study of Artificial Intelligence</title>
+  </head>
+  <body>
+    <div id="container">
+    <header>
+      <h1>A (Catholic) Study of Artificial Intelligence</h1>
+      <nav >
+        <ul>
+          <li><a href="#terms">TERMINOLOGY</a></li>
+          <li><a href="#timeline">TIMELINE</a></li>
+          <li><a href="#issues">ISSUES</a></li>
+          <li><a href="#people">PEOPLE</a></li>
+          <li><a href="#resources">RESOURCES</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="preface">
+        <h2>Preface</h2>
+        <blockquote cite="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html#Artificial_intelligence">
+          It is appropriate to preface this discussion with two considerations. First, any statement regarding AI risks becoming quickly outdated, given the remarkable pace at which these systems are developing. Second, all of us, including those who design them, possess only a limited understanding of their actual functioning. Indeed, current AI systems are more “cultivated” than “built,” for developers do not directly design every detail, but instead create a framework within which the intelligence “grows.” As a result, fundamental scientific aspects — such as the internal representations and computational processes of these systems — remain, at present, unknown. There thus emerges an urgent need for a twofold commitment: on the one hand, a deepening of scientific research; on the other, the exercise of moral and spiritual discernment.
+        </blockquote>
+        <p>
+          &mdash;Pope Leo XIV, Encyclical <cite>Magnifica Humanitas</cite>, paragraph 98
+        </p>
+        <a title="Edgar Beltrán, The Pillar, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_3_(3x4_cropped).png">
+          <img width="200" alt="Pope Leo XIV during a meeting with the media on May 12, 2025" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Pope_Leo_XIV_3_%283x4_cropped%29.png/250px-Pope_Leo_XIV_3_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
+        </a>
+      </section>
+      <section id="terms">
+        <h2>Terminology</h2>
+        <h3 id="term-ai">Artificial Intelligence (AI)</h3>
+        <p>
+          The term coined by "father of AI" John McCarthy in 1955 to refer to the problem of <q cite="http://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html">making a machine behave in ways that would be called intelligent if a human were so behaving.</q>
+        </p>
+        <p>Today...</p>
+        <blockquote cite="https://coe.gsa.gov/coe/ai-guide-for-government/what-is-ai-key-terminology/index.html">
+          <p>
+            This technology is rapidly evolving, and neither the scientific community nor industry agree on a common definition.
+          </p>
+          <p>
+            Some common definitions of AI include:
+            <ul>
+              <li>
+                A branch of computer science dealing with the simulation of intelligent behavior in computers.
+              </li>
+              <li>
+                Advanced statistical and analytical methods such as machine learning and artificial neural networks, especially deep learning.
+              </li>
+              <li>
+                A computer system able to perform specific tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
+              </li>
+            </ul>
+          </p>
+        </blockquote>
+        <p>
+          &mdash;Artificial Intelligence Center of Excellence (AI CoE), <cite>AI Guide for Government</cite>
+        </p>
+        <a title="IT Modernization Centers of Excellence, part of the U.S. General Services Administration" href="https://coe.gsa.gov/">
+          <img height="50" alt="IT Modernization Centers of Excellence logo" src="https://coe.gsa.gov/img/coe-logomark.svg">
+        </a>
+        <h3>Artificial Narrow Intelligence (ANI)</h3>
+        <p>
+          Also known as <strong>weak AI</strong> or <strong>narrow AI</strong>, AI designed for specific tasks. <em>All</em> AI systems currently exist in this form.
+        </p>
+        <h3 id="term-agi">Artificial General Intelligence (AGI)</h3>
+        <p>
+          A <em>hypothetical</em> system that can perform many, if not most, tasks associated with human-level intelligence.
+        </p>
+        <h3>Artificial Superintelligence (ASI)</h3>
+        <p>
+          The state at which AGI broadly surpasses the human capacities for cognitive tasks.
+        </p>
+        <h3>Machine Learning (ML)</h3>
+        <p>
+          A subset of AI that uses statistical methods to find patterns in large-scale data and make predictions without relying on pre-defined rules.
+        </p>
+        <h3 id="term-nn">
+          <a target="_blank" href="https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/#neural-network">Neural Network</a>
+        </h3>
+        <p>
+          Inspired by the densely interconnected pathways of the human brain (but only <em>remotely</em> resembling the biology), the multi-layered algorithmic structure that supports deep machine learning.
+        </p>
+        <h3>
+          Generative AI (GenAI)
+        </h3>
+        <p>
+          AI systems that produce new content, such as text, images, music, or videos, by learning patterns from existing data. 
+        </p>
+        <h3>
+          Large Language Models (LLMs)
+        </h3>
+        <p>
+          Deep neural networks that find the patterns of words and phrases in billions of texts. They are used by popular AI chatbots, such as ChatGPT, Claude, and Gemini, to generate the most likely sequence of words in response to a prompt.
+        </p>
+        <h3>Technocratic Paradigm</h3>
+        <blockquote cite="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html">
+          Furthermore, there is the risk of AI being used to promote what Pope Francis has called the “<strong>technocratic paradigm</strong>,” which perceives all the world's problems as solvable through technological means alone. In this paradigm, human dignity and fraternity are often set aside in the name of efficiency, “as if reality, goodness, and truth automatically flow from technological and economic power as such.”
+        </blockquote>
+        <p>
+          &mdash;Dicastery for the Doctrine of the Faith & Dicastery for Culture and Education, Note <cite>Antiqua et Nova</cite>, paragraph 54
+        </p>
+        <a title="The White House from Washington, DC, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pope_Francis_early_2020.jpg"><img height="200" alt="Pope Francis early 2020" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pope_Francis_early_2020.jpg/250px-Pope_Francis_early_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a>
+        <br>
+        <a href="#">
+          <span class="pinhead-arrow_up"></span>
+        </a>
+      </section>
+      <section id="timeline">
+        <h2>Timeline</h2>
+        <ul>
+          <li>
+            <b>1943</b>: Warren McCulloch and Walter Pitts introduces the first mathematical model of a <a href="#term-nn">neural network</a> at the University of Chicago
+          </li>
+          <li>
+            <b>1950</b>: Alan Turing devises in a paper what is now called the “<a target="_blank" href="https://plato.stanford.edu/entries/turing-test/#Tur195ImiGam">Turing Test</a>”
+            <figure>
+              <a title="Unknown photographer, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Alan_Turing_(1912-1954)_in_1936_at_Princeton_University.jpg"><img width="200" alt="Alan Turing, English computer scientist (1912-1954)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/250px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a>
+            </figure>
+          </li>
+          <li>
+            <b>1956</b>: John McCarthy organizes summer workshop on <a href="#term-ai">artificial intelligence</a> at Dartmouth University
+            <figure>
+              <a title="&quot;null0&quot;, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg">
+                <img height="250" alt="John McCarthy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/John_McCarthy_Stanford.jpg/250px-John_McCarthy_Stanford.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
+              </a>
+              <figcaption>John McCarthy, "Father of AI"</figcaption>
+            </figure>
+          </li>
+          <li>
+            <b>1966</b>: MIT computer scientist Joseph Weizenbaum creates ELIZA, the first chatbot
+          </li>
+          <li>
+            <b>1974</b>: "applied mathematician Sir James Lighthill published a critical report on academic AI research, claiming that researchers had essentially over-promised and under-delivered when it came to the potential intelligence of machines. His condemnation resulted in stark funding cuts."
+          </li>
+          <li>
+            <b>1979</b>: American Association for Artificial Intelligence is founded (now the <a href="https://aaai.org/about-aaai/">Association for the Advancement of Artificial Intelligence</a>)
+          </li>
+          <li>
+            <b>1984</b>: AAAI coins "AI winter"
+          </li>
+          <li>
+            <b>1986</b>: Ernst Dickmanns invents the first self-driving car
+          </li>
+          <li>
+            <b>1996</b>: IBM's Deep Blue wins chess
+          </li>
+          <li>
+            <b>2000</b>: Kismet, a “social robot”
+          </li>
+          <li>
+            <b>2004</b>: NASA Rovers
+          </li>
+          <li>
+            <b>2011</b>: NVIDIA GPUs for NN training
+          </li>
+          <li>
+            <b>2011</b>: Apple showcases Siri
+            <figure>
+              <a title="Apple Inc., Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Logo_Apple_Siri_iOS_2024.svg"><img width="120" alt="iOS logo of Siri in 2024" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_Apple_Siri_iOS_2024.svg/120px-Logo_Apple_Siri_iOS_2024.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"></a>
+            </figure>
+          </li>
+          <li>
+            <b>2012</b>: "Godfather of AI" Geoffrey Hinton and students present research on neural networks at ImageNet
+          </li>
+          <li>
+            <b>2013</b>: Hinton joins Google; Yann LeCun joins Facebook as chief AI scientist
+          </li>
+          <li>
+            <b>2014</b>: Amazon releases Alexa
+          </li>
+          <!-- <li>
+            2016: AlphaGO - reinforcement learning
+          </li> -->
+          <li>
+            <b>2016</b>: Hanson Robotics creates Sophia, a “human-like robot” that is granted Saudi Arabian citizenship a year later
+            <figure>
+              <a title="SazzadHossain, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Sophia_with_her_creator_David_Hanson_and_state_minister_of_ICT_(Bangladesh)_Zunaid_Ahmed_Palak_at_Digital_World_2017_conference,_Dhaka,_Bangladesh_in_December_2017.jpg"><img width="330" alt="Sophia with her creator David Hanson and state minister of ICT (Bangladesh) Zunaid Ahmed Palak at Digital World 2017 conference, Dhaka, Bangladesh in December 2017" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Sophia_with_her_creator_David_Hanson_and_state_minister_of_ICT_%28Bangladesh%29_Zunaid_Ahmed_Palak_at_Digital_World_2017_conference%2C_Dhaka%2C_Bangladesh_in_December_2017.jpg/330px-thumbnail.jpg"></a>
+            </figure>
+          </li>
+          <li>
+            <b>2018</b>: "Godfathers of Deep Learning" receive the Turing Award.
+          </li>
+          <li>
+            <b>2020</b>: OpenAI releases GPT-3
+          </li>
+          <li>
+            <b>2023</b>: Hinton resigns from Google to "speak more freely about the dangers of creating <a href="#term-agi">AGI</a>
+          <li>
+            <b>2025</b>: Antiqua et Nova
+          </li>
+          <li>
+            <b>2026</b>: Humanitas Magnifica
+          </li>
+        </ul>
+        <!-- <blockquote cite="https://www.ncregister.com/commentaries/antiqua-et-nova-ai-one-year">
+          As early as 1943, Warren McCulloch and Walter Pitts, two researchers at the University of Chicago, first proposed the concept of “neural networks,” a vast system of “nodes” modeled after neurons in the brain. These nodes are computational units that transmit signals to each other by means of a network that operates somewhat like the synapses connecting neurons in living organisms.
+        </blockquote>
+        <blockquote cite="https://www.ncregister.com/commentaries/antiqua-et-nova-ai-one-year">
+          In a 1950 paper, English mathematician and computer scientist Alan Turing devised a famous test — now known as the “Turing Test” — as a way of assessing whether machines can replicate human intelligence. He predicted that by the end of the century, it would be possible to program computers so that an interrogator would not have more than a 70% chance of distinguishing a human from a computer after five minutes of questioning.
+        </blockquote> -->
+        
+        <br>
+        <a href="#">
+          <span class="pinhead-arrow_up"></span>
+        </a>
+      </section>
+      <section id="people">
+        <h2>People</h2>
+        <article>
+          <h3>Sister Mary Kenneth Keller</h3>
+          <a title="Edwin Stein and John Kreissler/Wisconsin State Journal, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Sister_Mary_Kenneth_Keller_at_PhD_graduation_ceremony.jpg">
+            <img width="250" alt="Sister Mary Kenneth Keller at PhD graduation ceremony" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sister_Mary_Kenneth_Keller_at_PhD_graduation_ceremony.jpg/250px-Sister_Mary_Kenneth_Keller_at_PhD_graduation_ceremony.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
+          </a>
+          <blockquote cite="https://ieeexplore.ieee.org/document/10076929">
+            <p>
+              Sister Kenneth began her dissertation [24], “Inductive Inference on Computer Generated Patterns,” with the declaration, “The basic problem of this thesis is the exploration of an approach to the mechanization of inductive inference.” The idea was to automatically generate the nth mathematical expression in a series, given the first <i>k</i> expressions. As validation, Sister Kenneth implemented a FORTRAN program to determine the nth derivative of a function, given the first <i>k</i> derivatives. (She remarked that list processing languages such as LISP would have been more convenient but were not available to her.) She wanted to demonstrate that algorithms could perform tasks like differentiation through learning-by-example, rather than by a rule-based process. Although this approach was out of favor for many years, it has recently had a renaissance in so-called “deep learning models” in artificial intelligence and now dominates the field. Sister Kenneth did not claim that her “results obtained in the domain of analytic differentiation were important in themselves,” but that they demonstrated that her programs “do mechanize an inductive inference....accomplished in less than 30 seconds per problem” [24, pp. 46-47].
+            <p>
+              She concluded with her first statement on the relation between human and artificial intelligence: “The claim that this parallels the activity of the mathematician who generalizes on a symbol manipulation routine after some number of repetitions must, of course, be qualified” [24, p. 46].
+            </p>
+            <p>
+              The thesis was signed on May 21, 1965
+            </p>
+          </blockquote>
+        </article>
+        <a href="#">
+          <span class="pinhead-arrow_up"></span>
+        </a>
+      </section>
+      <section id="issues">
+        <h2>Issues</h2>
+        <h3>What do we mean by "intelligence" itself?</h3>
+        <blockquote cite="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html#What_is_Artificial_Intelligence">
+          <p>
+            In the case of humans, intelligence is a faculty that pertains to the person in his or her entirety, whereas in the context of AI, “intelligence” is understood functionally, often with the presumption that the activities characteristic of the human mind can be broken down into digitized steps that machines can replicate.
+          </p>
+          <p>
+            This functional perspective is exemplified by the “Turing Test,” which considers a machine “intelligent” if a person cannot distinguish its behavior from that of a human. However, in this context, the term “behavior” refers only to the performance of specific intellectual tasks; it does not account for the full breadth of human experience, which includes abstraction, emotions, creativity, and the aesthetic, moral, and religious sensibilities. Nor does it encompass the full range of expressions characteristic of the human mind. Instead, in the case of AI, the “intelligence” of a system is evaluated methodologically, but also reductively, based on its ability to produce appropriate responses—in this case, those associated with the human intellect—regardless of how those responses are generated.
+          </p>
+          <p>
+            AI's advanced features give it sophisticated abilities to perform tasks, but not the ability to think. This distinction is crucially important, as the way “intelligence” is defined inevitably shapes how we understand the relationship between human thought and this technology. To appreciate this, one must recall the richness of the philosophical tradition and Christian theology, which offer a deeper and more comprehensive understanding of intelligence—an understanding that is central to the Church's teaching on the nature, dignity, and vocation of the human person.
+          </p>
+        </blockquote>
+        <p>
+          &mdash;Dicastery for the Doctrine of the Faith & Dicastery for Culture and Education, Note <cite>Antiqua et Nova</cite>, paragraphs 10-12
+        </p>
+        <!-- <ul>
+          <li>Truth</li>
+          <li>Work</li>
+          <li>Freedom</li>
+        </ul>
+        <a title="NickViewsPages, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:2025_AI_Bubble_Speculation_2_SVG_Recreation.svg">
+          <img id="ai-bubble" alt="AI bubble. This is an SVG recreation of https://commons.wikimedia.org/wiki/File:2025_AI_Bubble_Speculation_2.png." src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2025_AI_Bubble_Speculation_2_SVG_Recreation.svg/960px-2025_AI_Bubble_Speculation_2_SVG_Recreation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
+        </a> -->
+        <img width="100%" alt="" src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/media/images/DataCenterInfographic_2026.01.21.png">
+        <article>
+          <blockquote cite="https://time.com/article/2026/07/03/how-to-make-ai-data-centers-more-sustainable/">
+            <p>
+              Individuals and companies want to choose AI models with sustainability in mind, but currently lack the numbers they need. Imagine a little counter that tells you how much energy each one of your ChatGPT queries uses and how much carbon it emits. That could help users and companies take this into account in their everyday AI usage. 
+            </p>
+            <p>
+              Developers need to start exposing energy and carbon footprint data directly in AI model interfaces and APIs, empowering both users and developers to make ecologically-informed choices about the AI they build and use. <a target="_blank" href="https://codecarbon.io/">Code Carbon</a>, a software package I helped develop, enables measuring energy and carbon for open-source models, but we still need buy-in from technology companies to integrate these measurements into widely-used AI tools.
+            </p>
+          </blockquote>
+          <p>
+            &mdash;Sasha Luccioni, <cite>How to Make AI Data Centers More Sustainable</cite>
+          </p>
+        </article>
+        <br>
+        <a href="#">
+          <span class="pinhead-arrow_up"></span>
+        </a>
+      </section>
+      <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Magnifica Humanitas</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html">Antiqua et Nova</a>
+          </li>
+          <li>
+            A
+            <a target="_blank" href="https://ascensionpress.com/blogs/articles/a-complete-guide-to-pope-leo-s-encyclical-magnificent-humanitas">
+            guide</a> to Magnifica Humanitas by Ascension Press
+          </li>
+          <li>
+            <a target="_blank" href="https://ethics.nd.edu/programs/delta/#delta-explained">DELTA</a>, a framework by Notre Dame University
+          </li>
+          <li>
+            <a target="_blank" href="https://codecarbon.io/">
+              Code Carbon
+            </a>
+          </li>
+          
+        </ul>
+        <br>
+        <a href="#">
+          <span class="pinhead-arrow_up"></span>
+        </a>
+      </section>
+    </main>
+    </div>
+    <!-- <div id="app"></div> 
+    <script type="module" src="/src/main.js"></script> -->
+  </body>
+</html>
