@@ -364,3 +364,27 @@ h3 {
   border-top: 1px solid;
   padding: 1em 0;
 }
+
+.positive-text {
+  color: lightgreen;
+}
+
+.negative-text {
+  color: lightcoral;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 1rem;
+}
+
+caption {
+  padding: 1rem;
+}

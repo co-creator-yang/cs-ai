@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/cs-ai/favicon.svg" />
     <link rel="stylesheet" href="https://pinhead.ink/v25/pinhead.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A (Catholic) Study of Artificial Intelligence</title>
-    <link rel="stylesheet" crossorigin href="/assets/index-DXYB_8VP.css">
+    <link rel="stylesheet" crossorigin href="/cs-ai/assets/index-D97wxYmM.css">
   </head>
   <body>
     <div id="container">
@@ -95,11 +95,21 @@
         <p>
           AI systems that produce new content, such as text, images, music, or videos, by learning patterns from existing data. 
         </p>
-        <h3>
+        <h3 id="term-llm">
           Large Language Models (LLMs)
         </h3>
         <p>
           Deep neural networks that find the patterns of words and phrases in billions of texts. They are used by popular AI chatbots, such as ChatGPT, Claude, and Gemini, to generate the most likely sequence of words in response to a prompt.
+        </p>
+        <h3 id="term-rm">
+          Reasoning Model
+        </h3>
+        <p>
+          "A category of AI model designed to engage in multi-step logical inference, exploring and evaluating multiple solution paths before producing a final output."
+        </p>
+        <h3 id="term-agentic">Agentic AI</h3>
+        <p>
+          An <strong>AI agent</strong> is an autonomous system that can break down high-level objectives into series of tasks and carry them out by selecting and leveraging external tools. The scope of possible tasks go beyond the capabilities of a more basic AI chatbot (e.g., filing expenses, making online reservations, and maintaining code). 
         </p>
         <h3>Technocratic Paradigm</h3>
         <blockquote cite="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html">
@@ -260,6 +270,72 @@
         <a title="NickViewsPages, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:2025_AI_Bubble_Speculation_2_SVG_Recreation.svg">
           <img id="ai-bubble" alt="AI bubble. This is an SVG recreation of https://commons.wikimedia.org/wiki/File:2025_AI_Bubble_Speculation_2.png." src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2025_AI_Bubble_Speculation_2_SVG_Recreation.svg/960px-2025_AI_Bubble_Speculation_2_SVG_Recreation.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
         </a> -->
+  
+        <h3>Ecology</h3>
+        <blockquote>
+          Broadening our perspective to the use of AI in society, we see that it is now embedded in decision-making processes across many sectors and at multiple levels: in communication, management and control. The gains in efficiency and the potential to improve certain services are clear, yet rapidly and uncritically adopting them exposes us to a range of risks, including the tendency to overlook the environmental impact. Current AI systems require enormous amounts of energy and water, significantly influencing carbon dioxide emissions, and place heavy demands on natural resources. As their complexity increases, especially in the case of <a href="#term-llm">large language models</a>, the need for computing power and storage capacity grows too, which requires an extensive network of machines, cables, data centers and energy-intensive infrastructure. For this reason, it is essential to develop more sustainable technological solutions that reduce environmental impact and help protect our common home.
+        </blockquote>
+        <p>
+          &mdash;Pope Leo XIV, Encyclical <cite>Magnifica Humanitas</cite>, paragraph 101
+        </p>
+        <a target="_blank" href="https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions">
+        <h4>Data center electricity use surged in 2025, even with tightening bottlenecks driving a scramble for solutions</h4>
+        </a>
+        <p class="positive-text">
+          <span class="pinhead-arrow_down"></span> Energy per "simple" text query (&lt; <span class="pinhead-analog_tv_with_rabbitears"></span> )
+        </p>
+        <blockquote>
+          Google reports that the median Gemini text prompt 
+          consumes 0.24 Wh (Google, 2025b); OpenAI puts the average ChatGPT query at 0.34 Wh 
+          (Altman, 2025); and a bottom-up estimation by Microsoft Research arrives at a median 
+          of 0.34 Wh for frontier-scale models with over 200 billion parameters (Felipe Oviedo, 
+          2025). These figures date from 2025 and are likely already lower.
+        </blockquote>
+        <figure>
+          <img src="/cs-ai/assets/fig_efficiency-CuCu0Nc1.png">
+        </figure>
+        <p class="negative-text">
+          <span class="pinhead-arrow_up"></span> Uses cases that "can consume hundreds or thousands of times more energy per query" (e.g., video generation and agentic tasks)
+        </p>
+        <figure>
+          <img src="/cs-ai/assets/fig_gpu_wh-C9XrDkYf.png">
+        </figure>
+        <table>
+          <caption>
+              Global Electricity Consumption in 2025
+          </caption>
+          <thead>
+              <tr>
+                <th scope="col">Overall</th>
+                <th scope="col">All Data Centers</th>
+                <th scope="col">AI-Focused Data Centers</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                  <span class="pinhead-arrow_up"></span> 3%
+                </td>
+                <td>
+                  <span class="pinhead-arrow_up"></span> 17%
+                </td>
+                <td>
+                  <span class="pinhead-arrow_up"></span> 50%
+                </td>
+              </tr>
+          </tbody>
+         
+         <!-- <tfoot>
+            <tr>
+               <th scope="row" colspan="2">Average age</th>
+               <td>33</td>
+            </tr>
+         </tfoot> -->
+          </table>
+          <br>
+          <a href="#">
+            <span class="pinhead-arrow_up"></span>
+          </a>
         <img width="100%" alt="" src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/media/images/DataCenterInfographic_2026.01.21.png">
         <article>
           <blockquote cite="https://time.com/article/2026/07/03/how-to-make-ai-data-centers-more-sustainable/">
@@ -274,6 +350,13 @@
             &mdash;Sasha Luccioni, <cite>How to Make AI Data Centers More Sustainable</cite>
           </p>
         </article>
+        <h3>War</h3>
+          <p>
+            <a href="https://www.allsides.com/story/technology-plans-armed-humanoid-robots-spark-debate-over-military-ai">
+              Foundation Future Industries plans to arm humanoid robots 
+            </a>
+          </p>
+        
         <br>
         <a href="#">
           <span class="pinhead-arrow_up"></span>
@@ -301,7 +384,9 @@
               Code Carbon
             </a>
           </li>
-          
+          <li>
+            <a target="_blank" href="https://calculator.ecologits.ai/">Ecologits Calculator</a>
+          </li>
         </ul>
         <br>
         <a href="#">
