@@ -316,11 +316,11 @@ main {
   max-width: 1126px;
 }
 
-img#ai-bubble {
+/* img#ai-bubble {
   background-color: #e5e4e7;
   padding: 2em;
   width: 500px;
-}
+} */
 
 section {
   /* background-color: #08060d; */
@@ -329,7 +329,7 @@ section {
 }
 
 blockquote {
-  background-color: #08060d;
+  background-color: var(--code-bg);
   padding: 1em;
 }
 
@@ -338,6 +338,7 @@ header {
   top: 0; /* Position the navbar at the top of the page */
   left: 0;
   width: 100%;
+  color: #dfdfe2;
   background-color: darkgoldenrod;
   margin: 0;
   padding: 1rem;
@@ -351,7 +352,7 @@ nav > ul {
 }
 
 a {
-  color: #f3f4f6;
+  color: var(--text-h);
 }
 
 nav a {
@@ -383,7 +384,7 @@ h3 {
 }
 
 .positive-text {
-  color: lightgreen;
+  color: seagreen;
 }
 
 .negative-text {
